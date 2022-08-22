@@ -1,0 +1,10 @@
+site_name: Mes exercices en ligne
+site_url: https://mes_exercices_en_ligne.github.io
+
+nav:
+    - Accueil: index.md
+    - 3°: troisieme.md
+    - Seconde: seconde.md
+    - Première: premiere.md
+    - Terminale: terminale.md
+theme: readthedocs
