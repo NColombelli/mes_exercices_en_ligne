@@ -1,10 +1,66 @@
 site_name: Mes exercices en ligne
 site_url: https://mes_exercices_en_ligne.github.io
-
 nav:
     - Accueil: index.md
-    - 3°: troisieme.md
+    - Troisième: troisieme.md
     - Seconde: seconde.md
     - Première: premiere.md
     - Terminale: terminale.md
-theme: readthedocs
+theme: 
+  name: material
+  language: fr
+  icon:
+    logo: fontawesome/solid/square-root-variable
+  favicon: assets/favicon.jpg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - navigation.instant
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode nuit
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode jour
+  font:
+    code: JetBrains Mono
+
+markdown_extensions:
+  - toc:
+      permalink: '#'
+      toc_depth: 3
+      slugify: !!python/name:pymdownx.slugs.uslugify_encoded
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - abbr
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.cartolycee.net/
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
